@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#F4F0E8">
+    <ScrollView>
+        <VerticalStackLayout Padding="24,34" Spacing="20" VerticalOptions="Center">
+            <Label Text="HOTEL HORIZONTE" FontSize="12" CharacterSpacing="3"
+                   TextColor="#B47A3C" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+            <Border BackgroundColor="#173F3A" StrokeThickness="0"
+                    StrokeShape="RoundRectangle 26" Padding="26">
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="✦" FontSize="42" TextColor="#E8C99F" HorizontalTextAlignment="Center" />
+                    <Label Text="Sobre o projeto" FontSize="26"
+                           TextColor="#FFFFFF" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+                    <Label Text="Uma experiência de hospedagem pensada para transmitir conforto, tranquilidade e acolhimento."
+                           FontSize="14" TextColor="#E4EAE5" HorizontalTextAlignment="Center" />
+                </VerticalStackLayout>
+            </Border>
+            <Border BackgroundColor="#FFFFFF" Stroke="#E5DED2" StrokeThickness="1"
+                    StrokeShape="RoundRectangle 22" Padding="22">
+                <VerticalStackLayout Spacing="14">
+                    <Label Text="INFORMAÇÕES DO DESENVOLVIMENTO" FontSize="11"
+                           CharacterSpacing="1.1" TextColor="#B47A3C"
+                           FontAttributes="Bold" HorizontalTextAlignment="Start" />
+                    <VerticalStackLayout Spacing="3">
+                        <Label Text="Desenvolvedor" FontSize="12" TextColor="#87908A" HorizontalTextAlignment="Start" />
+                        <Label Text="Cauã Gabriel" FontSize="18" TextColor="#173F3A"
+                               FontAttributes="Bold" HorizontalTextAlignment="Start" />
+                    </VerticalStackLayout>
+                    <BoxView HeightRequest="1" Color="#EEE8DE" />
+                    <VerticalStackLayout Spacing="3">
+                        <Label Text="Ano de desenvolvimento" FontSize="12" TextColor="#87908A" HorizontalTextAlignment="Start" />
+                        <Label Text="2026" FontSize="18" TextColor="#173F3A"
+                               FontAttributes="Bold" HorizontalTextAlignment="Start" />
+                    </VerticalStackLayout>
+                    <BoxView HeightRequest="1" Color="#EEE8DE" />
+                    <VerticalStackLayout Spacing="3">
+                        <Label Text="Curso" FontSize="12" TextColor="#87908A" HorizontalTextAlignment="Start" />
+                        <Label Text="Desenvolvimento de Sistemas" FontSize="16"
+                               TextColor="#173F3A" FontAttributes="Bold" HorizontalTextAlignment="Start" />
+                    </VerticalStackLayout>
+                    <Label Text="Aplicativo acadêmico desenvolvido com .NET MAUI."
+                           FontSize="12" TextColor="#69736D" HorizontalTextAlignment="Start" />
+                </VerticalStackLayout>
+            </Border>
+            <Button Text="VOLTAR" Clicked="OnBackClicked"
+                    BackgroundColor="#C58A4A" TextColor="#FFFFFF"
+                    FontSize="12" FontAttributes="Bold" CharacterSpacing="1"
+                    CornerRadius="15" HeightRequest="52" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
